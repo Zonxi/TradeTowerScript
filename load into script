@@ -42,7 +42,7 @@ tradetowerscript.TextScaled = true
 tradetowerscript.TextSize = 14.000
 tradetowerscript.TextWrapped = true
 tradetowerscript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/B2n1KQzr", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zonxi/TradeTowerScript/main/ZonxiScripts?token=AUEDQU7BPAQ75LCF7JCWNJDBCBCOY", true))()
 end)
 
 TextLabel.Parent = main
