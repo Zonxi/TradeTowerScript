@@ -1,0 +1,123 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local autoClick = Instance.new("TextButton")
+local autoUpgrade = Instance.new("TextButton")
+local autoCase = Instance.new("TextButton")
+local autoSell = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(167, 201, 255)
+main.Position = UDim2.new(0.300366282, 0, 0.396901071, 0)
+main.Size = UDim2.new(0, 638, 0, 314)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label.BackgroundTransparency = 100.000
+label.Size = UDim2.new(0, 638, 0, 50)
+label.Font = Enum.Font.SciFi
+label.Text = "Zonxi Scripts | Trade Tower Script"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextScaled = true
+label.TextSize = 14.000
+label.TextWrapped = true
+
+autoClick.Name = "autoClick"
+autoClick.Parent = main
+autoClick.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
+autoClick.Position = UDim2.new(0, 0, 0.273885339, 0)
+autoClick.Size = UDim2.new(0, 271, 0, 59)
+autoClick.Font = Enum.Font.SciFi
+autoClick.Text = "AutoClick"
+autoClick.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoClick.TextScaled = true
+autoClick.TextSize = 14.000
+autoClick.TextWrapped = true
+autoClick.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/4jBff3Cn"))()
+end)
+
+autoUpgrade.Name = "autoUpgrade"
+autoUpgrade.Parent = main
+autoUpgrade.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
+autoUpgrade.Position = UDim2.new(0.525078356, 0, 0.273885369, 0)
+autoUpgrade.Size = UDim2.new(0, 271, 0, 59)
+autoUpgrade.Font = Enum.Font.SciFi
+autoUpgrade.Text = "AutoUpgrade"
+autoUpgrade.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoUpgrade.TextScaled = true
+autoUpgrade.TextSize = 14.000
+autoUpgrade.TextWrapped = true
+autoUpgrade.MouseButton1Down:connect(function()
+	function autoUpgrade()
+		spawn(function()
+			while getgenv().autoUpgrade == true do
+				local A_1 = "Upgrade"
+				local Event = game:GetService("ReplicatedStorage").Events.StoreActions
+				Event:InvokeServer(A_1)
+				wait()
+			end
+		end)
+	end
+end)
+
+	
+autoCase.Name = "autoCase"
+autoCase.Parent = main
+autoCase.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
+autoCase.Position = UDim2.new(0, 0, 0.665605128, 0)
+autoCase.Size = UDim2.new(0, 271, 0, 59)
+autoCase.Font = Enum.Font.SciFi
+autoCase.Text = "AutoCase"
+autoCase.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoCase.TextScaled = true
+autoCase.TextSize = 14.000
+autoCase.TextWrapped = true
+autoCase.MouseButton1Down:connect(function()
+
+	function autoCase()    
+		spawn(function()
+			while getgenv().autoCase == true do
+				local A_1 = "Noobie"
+				local Event = game:GetService("ReplicatedStorage").Events.OpenCase
+				Event:InvokeServer(A_1)
+				wait()
+			end
+		end)
+	end
+end)
+
+autoSell.Name = "autoSell"
+autoSell.Parent = main
+autoSell.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
+autoSell.Position = UDim2.new(0.510971785, 0, 0.665605128, 0)
+autoSell.Size = UDim2.new(0, 271, 0, 59)
+autoSell.Font = Enum.Font.SciFi
+autoSell.Text = "AutoSell"
+autoSell.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoSell.TextScaled = true
+autoSell.TextSize = 14.000
+autoSell.TextWrapped = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 199.000
+TextLabel.Position = UDim2.new(0.302507848, 0, 0.480891734, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 58)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Zonxi#1111 on discord for help!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
