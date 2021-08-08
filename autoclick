@@ -1,0 +1,10 @@
+function doClick()
+    spawn(function()
+        while getgenv().autoClick ==  true do
+            local Event = game:GetService("ReplicatedStorage").Events.ClientClick
+            Event:FireServer()
+            wait()
+        end
+    end)
+end 
+    
