@@ -47,18 +47,6 @@ tradetowerscript.MouseButton1Click:connect(function()
 	https://raw.githubusercontent.com/Zonxi/TradeTowerScript/main/MainTradeTowerScript
 end)
 
-TextLabel.Parent = main
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 199.000
-TextLabel.Position = UDim2.new(0.32601881, 0, 0.780254781, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 58)
-TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "Zonxi#1111 on discord for help!"
-TextLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
 afk.Name = "afk"
 afk.Parent = main
 afk.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
@@ -73,4 +61,17 @@ afk.TextWrapped = true
 afk.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
 end)
+
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 199.000
+TextLabel.Position = UDim2.new(0.32601881, 0, 0.780254781, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 58)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Zonxi#1111 on discord for help!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
