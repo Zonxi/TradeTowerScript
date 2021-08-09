@@ -5,7 +5,7 @@ local main = Instance.new("Frame")
 local label = Instance.new("TextLabel")
 local tradetowerscript = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
-local afk = Instance.new("TextButton")
+
 
 --Properties:
 
@@ -45,21 +45,6 @@ tradetowerscript.TextSize = 14.000
 tradetowerscript.TextWrapped = true
 tradetowerscript.MouseButton1Click:connect(function()
 	https://raw.githubusercontent.com/Zonxi/TradeTowerScript/main/MainTradeTowerScript
-end)
-
-afk.Name = "afk"
-afk.Parent = main
-afk.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
-afk.Position = UDim2.new(0.470219433, 0, 0.273885339, 0)
-afk.Size = UDim2.new(0, 338, 0, 124)
-afk.Font = Enum.Font.SciFi
-afk.Text = "go afk"
-afk.TextColor3 = Color3.fromRGB(0, 0, 0)
-afk.TextScaled = true
-afk.TextSize = 14.000
-afk.TextWrapped = true
-afk.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
 end)
 
 
