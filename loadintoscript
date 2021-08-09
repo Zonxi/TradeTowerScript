@@ -42,8 +42,24 @@ tradetowerscript.TextScaled = true
 tradetowerscript.TextSize = 14.000
 tradetowerscript.TextWrapped = true
 tradetowerscript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zonxi/TradeTowerScript/main/MainTradeTowerScript?token=AUEDQU6R5BUGWVLS6SSUI7LBCBIM6", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zonxi/TradeTowerScript/main/MainTradeTowerScript", true))()
 end)
+
+afk.Name = "tradetowerscript"
+afk.Parent = main
+afk.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
+afk.Position = UDim2.new(0, 0, 0.273885339, 0)
+afk.Size = UDim2.new(0, 638, 0, 124)
+afk.Font = Enum.Font.SciFi
+afk.Text = "Zonxis Trade tower script"
+afk.TextColor3 = Color3.fromRGB(0, 0, 0)
+afk.TextScaled = true
+afk.TextSize = 14.000
+afk.TextWrapped = true
+afk.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
+end)
+
 
 TextLabel.Parent = main
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
