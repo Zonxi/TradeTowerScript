@@ -1,9 +1,11 @@
 --made by Zonxi
+
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local label = Instance.new("TextLabel")
 local tradetowerscript = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
+local afk = Instance.new("TextButton")
 
 --Properties:
 
@@ -13,7 +15,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(167, 201, 255)
-main.Position = UDim2.new(0.300366282, 0, 0.396901071, 0)
+main.Position = UDim2.new(0.0457875133, 0, 0.499404043, 0)
 main.Size = UDim2.new(0, 638, 0, 314)
 main.Active = true
 main.Draggable = true
@@ -34,32 +36,16 @@ tradetowerscript.Name = "tradetowerscript"
 tradetowerscript.Parent = main
 tradetowerscript.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
 tradetowerscript.Position = UDim2.new(0, 0, 0.273885339, 0)
-tradetowerscript.Size = UDim2.new(0, 638, 0, 124)
+tradetowerscript.Size = UDim2.new(0, 300, 0, 124)
 tradetowerscript.Font = Enum.Font.SciFi
 tradetowerscript.Text = "Zonxis Trade tower script"
 tradetowerscript.TextColor3 = Color3.fromRGB(0, 0, 0)
 tradetowerscript.TextScaled = true
 tradetowerscript.TextSize = 14.000
 tradetowerscript.TextWrapped = true
-tradetowerscript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zonxi/TradeTowerScript/main/MainTradeTowerScript", true))()
+tradetowerscript.MouseButton1Click:connect(function()
+	https://raw.githubusercontent.com/Zonxi/TradeTowerScript/main/MainTradeTowerScript
 end)
-
-afk.Name = "tradetowerscript"
-afk.Parent = main
-afk.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
-afk.Position = UDim2.new(0, 0, 0.273885339, 0)
-afk.Size = UDim2.new(0, 638, 0, 124)
-afk.Font = Enum.Font.SciFi
-afk.Text = "Zonxis Trade tower script"
-afk.TextColor3 = Color3.fromRGB(0, 0, 0)
-afk.TextScaled = true
-afk.TextSize = 14.000
-afk.TextWrapped = true
-afk.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
-end)
-
 
 TextLabel.Parent = main
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -72,3 +58,19 @@ TextLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
+
+afk.Name = "afk"
+afk.Parent = main
+afk.BackgroundColor3 = Color3.fromRGB(206, 237, 255)
+afk.Position = UDim2.new(0.470219433, 0, 0.273885339, 0)
+afk.Size = UDim2.new(0, 338, 0, 124)
+afk.Font = Enum.Font.SciFi
+afk.Text = "go afk"
+afk.TextColor3 = Color3.fromRGB(0, 0, 0)
+afk.TextScaled = true
+afk.TextSize = 14.000
+afk.TextWrapped = true
+afk.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
+end)
+
